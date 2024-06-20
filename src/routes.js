@@ -23,6 +23,31 @@ export const routes = [
     }
   },
   {
+    method: 'PUT',
+    path: buildRoutePath('/tasks/:id'),
+    handler: (req, res) => {
+      const { id } = req.params;
+
+      const { title, description } = req.body;
+
+      let task = {
+        updated_at: new Date().toISOString()
+      };
+
+      if (title) {
+        Object.assign(task, { title });
+      }
+
+      if (description) {
+        Object.assign(task, { description });
+      }
+
+      database.update('tasks', id, task)
+
+      return res.writeHead(204).end();
+    }
+  },
+  {
     method: 'POST',
     path: buildRoutePath('/tasks'),
     handler: (req, res) => {
