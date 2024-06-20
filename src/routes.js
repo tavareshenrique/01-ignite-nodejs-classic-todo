@@ -23,6 +23,26 @@ export const routes = [
     }
   },
   {
+    method: 'POST',
+    path: buildRoutePath('/tasks'),
+    handler: (req, res) => {
+      const { title, description } = req.body;
+
+      const task = {
+        id: randomUUID(),
+        title,
+        description,
+        completed_at: null,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      }
+
+      database.insert('tasks', task);
+
+      return res.writeHead(201).end();
+    }
+  },
+  {
     method: 'PUT',
     path: buildRoutePath('/tasks/:id'),
     handler: (req, res) => {
@@ -48,23 +68,14 @@ export const routes = [
     }
   },
   {
-    method: 'POST',
-    path: buildRoutePath('/tasks'),
+    method: 'DELETE',
+    path: buildRoutePath('/tasks/:id'),
     handler: (req, res) => {
-      const { title, description } = req.body;
+      const { id } = req.params
 
-      const task = {
-        id: randomUUID(),
-        title,
-        description,
-        completed_at: null,
-        created_at: new Date().toISOString(),
-        updated_at: new Date().toISOString(),
-      }
+      database.delete('tasks', id)
 
-      database.insert('tasks', task);
-
-      return res.writeHead(201).end();
+      return res.writeHead(204).end()
     }
-  },
+  }
 ]
