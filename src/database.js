@@ -22,7 +22,6 @@ export class Database {
   select(table, search) {
     let data = this.#database[table] ?? []
 
-    console.log('search', search)
     if (search) {
 
       data = data.filter(row => {
@@ -45,5 +44,23 @@ export class Database {
     this.#persist()
 
     return data
+  }
+
+  update(table, id, data) {
+    if (Array.isArray(this.#database[table])) {
+      const rowIndex = this.#database[table].findIndex(row => row.id === id)
+
+      if (rowIndex > -1) {
+        const { id, ...rest } = this.#database[table][rowIndex]
+
+        this.#database[table][rowIndex] = { 
+          id, 
+          ...rest,
+          ...data 
+        }
+
+        this.#persist()
+      }
+    }
   }
 }
