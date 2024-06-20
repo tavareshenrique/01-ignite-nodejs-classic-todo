@@ -7,6 +7,22 @@ const database = new Database();
 
 export const routes = [
   {
+    method: 'GET',
+    path: buildRoutePath('/tasks'),
+    handler: (req, res) => {
+      const { search } = req.query;
+
+      const taskSearch = search ? { 
+        title: search,
+        description: search
+      } : null;
+
+      const tasks = database.select('tasks', taskSearch);
+
+      return res.end(JSON.stringify(tasks));
+    }
+  },
+  {
     method: 'POST',
     path: buildRoutePath('/tasks'),
     handler: (req, res) => {
