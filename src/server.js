@@ -26,4 +26,6 @@ const server = http.createServer(async (req, res) => {
   return res.writeHead(404).end();
 })
 
-server.listen(3333);
+server.listen(3333, () => {
+  console.log('Server is running on port 3333 🚀');
+});
