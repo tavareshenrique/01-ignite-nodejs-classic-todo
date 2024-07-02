@@ -1,5 +1,5 @@
 {
-  "name": "ignite-nodejs-challengers",
+  "name": "01-ignite-nodejs-classic-todo",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -7,10 +7,19 @@
   "scripts": {
     "dev": "node --watch src/server.js"
   },
-  "keywords": ["nodejs", "ignite", "rocketseat", "node"],
+  "keywords": [
+    "nodejs",
+    "ignite",
+    "rocketseat",
+    "node"
+  ],
   "author": {
     "name": "Henrique Tavares",
     "email": "ihenrits@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "csv": "6.3.9",
+    "csv-parse": "5.5.6"
+  }
 }
