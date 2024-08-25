@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  O <b>ToDo</b> é o desafio do primeiro módulo do curso  <b>Ignite NodeJS da Rocketseat</b>. Para acessar o código do curso do <b>Ignite NODEJS</b>, <a href="https://github.com/tavareshenrique/ignite-nodejs">clique aqui</a> .
+  O <b>ToDo</b> é o desafio do <b>primeiro módulo</b> do curso  <b>Ignite NodeJS da Rocketseat</b>. Para acessar o código do curso do <b>Ignite NodeJS</b>, <a href="https://github.com/tavareshenrique/ignite-nodejs">clique aqui</a> .
 </p>
 
 <p align="center">
