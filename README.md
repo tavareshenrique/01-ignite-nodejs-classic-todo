@@ -3,11 +3,11 @@
 </h1>
 
 <p align="center">
-  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/tavareshenrique/ignite-reactjs-v2?color=328735">
+  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/tavareshenrique/01-ignite-nodejs-classic-todo?color=328735">
   <img alt="Made by Henrique Tavares" src="https://img.shields.io/badge/made%20by-Henrique Tavares-%20?color=328735">
-  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/tavareshenrique/ignite-reactjs-v2?color=4ea8de">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tavareshenrique/ignite-reactjs-v2?color=4ea8de">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/tavareshenrique/ignite-reactjs-v2?color=4ea8de">
+  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/tavareshenrique/01-ignite-nodejs-classic-todo?color=4ea8de">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/tavareshenrique/01-ignite-nodejs-classic-todo?color=4ea8de">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/tavareshenrique/01-ignite-nodejs-classic-todo?color=4ea8de">
 </p>
 
 <p align="center">
